@@ -113,8 +113,7 @@ void drawPhone() {
   }
   popMatrix();
   blendMode(BLEND);
-  
   translate(0, 200, 50 + 350 * mPerspective);
-  updateMessages();
+  updateMessages(); 
   popMatrix();
 }

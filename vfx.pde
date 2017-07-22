@@ -25,6 +25,9 @@ void drawBgFx() {
   }
   
   _sparks.update();
+  
+  
+  messageIntro.update();
   popMatrix();
 }
 

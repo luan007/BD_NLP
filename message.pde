@@ -1,3 +1,14 @@
+intros messageIntro = new intros(new String[]{
+  "词法分析",
+  "依存句法分析",
+  "词向量表示",
+  "DNN语言模型",
+  "词义相似度",
+  "短文本相似度",
+  "评论观点抽取",
+  "情感倾向分析"
+});
+
 String dancer = ">>";
 
 String breakStr(String s, int max) {
@@ -56,18 +67,17 @@ void addTranslationMessage(String text, int en) {
 }
 
 void updateMessages() {
-  //if (mousePressed) {
-  //  real.addMessage(1, 1, ("testeadfasfasfasdfasdfasfasdfasdftestt"));
-  //  real.addMessage(0, 1, ("我要吃薯片"));
-  //  translation.addMessage(1, 0, ("我要吃点翔"));
-  //  translation.addMessage(0, 0, ("I want some chip"));
-  //}
-
+  
+  
+  pushMatrix();
+  scale(min(1, cPerspective * 10));
+  
   real.update();
   translate(0, 0, 200);
   translation.update();
   translate(-500, 0, -800);
   dynamic.update();
+  popMatrix();
 }
 
 public class msgSplash extends psys<msg> {

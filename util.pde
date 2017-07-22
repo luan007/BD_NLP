@@ -1,6 +1,3 @@
-
-
-
 float cdist(color c, color d) {
   return (abs(red(d) - red(c)) + abs(green(d) - green(c)) + abs(blue(d) - blue(d))) / 3.0;
 }
@@ -30,7 +27,6 @@ class state {
     sid = sid + 1;
     colors = new color[cnp.length / 3];
     pos = new int[cnp.length / 3 * 2];
-
     for (int i = 0; i < cnp.length; i += 3) {
       colors[i / 3]        = (color)cnp[i];
       pos[i / 3 * 2]       = cnp[i + 1] / checkBufDiv;
